@@ -42,6 +42,7 @@ $ yarn run start
 - [] Use graphql codegen to generate query types for the codebase
 - [] Eject the cra and use custom code-splitting
 - [] Use webpack-offline-plugin to turn the app into a PWA
+- [] Add proper error handling throughout the app
 - [] Replace custom styles with theming variables
 - [] Use the firebase API to implement subscriptions on the server
 - [] Tests

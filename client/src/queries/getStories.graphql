@@ -1,0 +1,14 @@
+query getStories($count: Int!, $page: Int!, $type: StoryType!) {
+  stories(count: $count, page: $page, type: $type) {
+    id
+    descendants
+    kids
+    score
+    text
+    time
+    url
+    type
+    title
+    by
+  }
+}
