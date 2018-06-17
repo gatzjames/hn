@@ -1,0 +1,48 @@
+type Query {
+  stories(type: StoryType!, page: Int!, count: Int!): [Story]
+  items(ids: [Int]): [Item]
+  user(id: ID!): User
+}
+
+enum StoryType {
+  top
+  new
+  best
+  ask
+  show
+  job
+}
+
+type Story {
+  id: ID!
+  descendants: Int
+  kids: [Int]
+  score: Int
+  time: Int
+  text: String
+  title: String
+  type: String
+  url: String
+  by: String
+}
+
+type Item {
+  id: ID!
+  descendants: Int
+  kids: [Int]
+  kidsItems: [Item]
+  score: Int
+  time: Int
+  text: String
+  title: String
+  type: String
+  url: String
+  by: String
+}
+
+type User {
+  id: ID!
+  about: String
+  created: Int
+  karma: Int
+}

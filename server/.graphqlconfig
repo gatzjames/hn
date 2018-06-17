@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "hn-server": {
+      "schemaPath": "schema.graphql"
+    }
+  }
+}

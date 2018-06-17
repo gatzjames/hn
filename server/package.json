@@ -1,0 +1,17 @@
+{
+  "name": "hn-server",
+  "version": "0.0.1",
+  "description": "A graphql server with he HN api",
+  "main": "index.js",
+  "author": "gatzjames <jamesgatzos@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "firebase": "^5.0.4",
+    "firebase-hackernews": "^2.11.0",
+    "graphql-yoga": "^1.14.8"
+  },
+  "scripts": {
+    "start": "node ."
+  }
+}
